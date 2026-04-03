@@ -1,6 +1,6 @@
 export class EmployeeStatistics {
     constructor(employees) {
-        if (IsNullOrUndefined(employees) || !Array.isArray(employees) || employees.length === 0)
+        if (employees === null || employees === undefined || !Array.isArray(employees) || employees.length === 0)
         {
             throw new Error("A dolgozók mefadása kötelező")
         }
